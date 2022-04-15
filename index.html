@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cred - pay your credit card bills online</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <script>
+        const showSlides = (n) => {
+  let i;
+  let slides = document.getElementsByClassName("app-review");
+  let dots = document.getElementsByClassName("app-review-nav-circle");
+  if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.color = "transparent";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+  slides[slideIndex-1].style.color = "#FFF";
+  dots[slideIndex-1].className += " active";
+}
+        const currentSlide = (n) => {
+  showSlides(slideIndex = n);
+}
+    </script>
+    <header class="landing" id="landing">
+        <div class="landing-nav-wrapper">
+        <nav class="landing-nav" id="landing-nav">
+            <ul class="landing-nav-left">
+                <li><img src="images/cred-logo.png" height="66px"/></li>
+                <li><img src="images/ipl22.png" height="65px" /></li>
+            </ul>
+    
+            <ul class="landing-nav-right">
+                <li>
+                    <a href="">credit score check</a>
+                </li>
+                <li>
+                    <a href="" id="CRED-X-IPL">
+                        <p>NEW</p>
+                        <p>CRED X IPL</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        </div>
+
+        <h3>pay credit card bill. earn guaranteed ₹200 back. <a href="">claim now <img src="images/arrow.png" height="11px"/></a></h3>
+        <h1>rewards for paying credit card bills.</h1>
+        <h2>join 9M+ members who win rewards and cashbacks everyday</h2>
+
+        <button class="button">Download CRED</button>
+    </header>
+
+    <section class="hero" id="hero">
+        <img src="images/left-2.png" alt="" class="cred-app-left-bottom">
+        <img src="images/left-1.png" alt="" class="cred-app-left">
+        <img src="images/center.png" alt="" class="cred-app-top">
+        <img src="images/right-1.png" alt="" class="cred-app-right">
+        <img src="images/right-2.png" alt="" class="cred-app-right-bottom">
+    </section>
+
+    <section class="deserve-more">
+        <h2>feel special more often.</h2>
+        <h4>exclusive rewards for paying your bills</h4>
+        <p>every time you pay your credit card bills on CRED, you receive CRED coins. you can use these to win exclusive rewards or get special access to curated products and experiences. on CRED, good begets good.</p>
+        <button class="button">Explore rewards</button>
+    </section>
+
+    <section class="rewards">
+        <h4>rewards from brands you love.</h4>
+        <img src="images/brands-desktop.png" />
+    </section>
+
+    <section class="money-matters">
+        <h2>we take your money matters seriously.</h2>
+        <h4>so that you don’t have to.</h4>
+        <p>never miss a due date with reminders to help you pay your bills on time, instant settlements mean you never wait for your payments to go through and statement analysis lets you know where your money goes, always.</p>
+        <button class="button">Experience the upgrade</button>
+    </section>
+
+    <div class="parallax">
+        <div></div>
+    </div>
+
+    <section class="security">
+        <h2>security first. and second.</h2>
+        <h4>what’s yours remains only yours.</h4>
+        <p>CRED ensures that all your personal data and transactions are encrypted, and secured so what’s yours remains only yours. there’s no room for mistakes because we didn’t leave any.</p>
+        <button class="button">Become a member</button>
+    </section>
+
+    <section class="trust">
+        <h2>the story of CRED begins with trust.</h2>
+        <div class="trust-content">
+            <p class="trust-content-para">trust as a virtue has consistently played an essential role in every great human achievement. and consistently, its importance has been overlooked. not just by individuals, but by entire societies. we felt it was time someone gave it the spotlight it deserves. especially for the ones who live by this virtue: the trustworthy.</p>
+            <p class="trust-content-para">so we thought of creating a system that rewards its members for doing good and being trustworthy. this way, trust as a virtue becomes something to aspire to, just the way it should be. then we went one step ahead: we built it. we know we are on the right track because here you are.</p>
+            <p class="trust-content-para">if you make it to CRED, congratulations and welcome. we have a lot of things planned for you.</p>
+        </div>
+    </section>
+
+    <section class="app-reviews">
+        <div class="app-marketplace">
+            <div class="app-rating">
+                <div class="app-rating-score">4.8
+                    <h2 class="app-store">app<br>store</h2>
+                </div>
+                <img src="images/rating-ios.png" class="app-rating-stars" />
+            </div>
+            <button class="app-marketplace-download">
+                <img src="images/apple-store-logo.png" />
+                Download the app
+            </button>
+        </div>
+
+        <div class="app-marketplace">
+            <div class="app-rating">
+                <div class="app-rating-score">4.7
+                    <h2 class="app-store">play<br>store</h2>
+                </div>
+                <img src="images/rating-android.png" class="app-rating-stars" />
+            </div>
+            <button class="app-marketplace-download">
+                <img src="images/play-store-logo.png" />
+                Download the app
+            </button>
+        </div>
+
+        <div class="app-review-carousel">
+                <div class="app-review">
+                    <p class="app-review-content">
+                        "this is a great app loaded with functionality and simplicity yet elegant and intuitive. a must have for the plastic money users. keeps me in financial discipline and helps me take the billing and payment worries out of my mind"
+                    </p>
+                    <p class="app-review-authors">ranesh bhattacharya</p>
+                </div>
+        
+                <div class="app-review">
+                    <p class="app-review-content">
+                        "in love! such a seamless user experience, smooth as freshly waxed pair of legs! very intuitive and easy to use application. good job people, good job."
+                    </p>
+                    <p class="app-review-authors">parul mehra</p>
+                </div>
+        
+                <div class="app-review">
+                    <p class="app-review-content">
+                        "have been using the app for an year... very happy with this. it greatly avoids the need for searching for statements individually and logging in to pay them all. with cred i can happily pay all my cc bills with a single click. love the experience."
+                    </p>
+        
+                    <p class="app-review-authors">pushpalatha a</p>
+                </div>
+        
+                <div class="app-review">
+                    <p class="app-review-content">
+                        "great app, paying dues of credit card was never that much easy and fast. few more rewarding features also available there like showing credit score, can easily pay rent, getting cashback whenever paying cc dues. lots more. i really loves cred."
+                    </p>
+        
+                    <p class="app-review-authors">sanjeev kataria</p>
+                </div>
+        
+                <div class="app-review">
+                    <p class="app-review-content">
+                        "i would say one of the best platforms to manage your credit card payments with lot of advantages and rewards. you can even pay rent to your owner using credit card. that's really cool. thanks for all the awesomeness. keep inventing !!"
+                    </p>
+                    <p class="app-review-authors">jagadeeswar reddy singam</p>
+                </div>
+            </div>
+
+            <div class="app-review-nav">
+                <a href="#review-1" class="app-review-nav-circle" onclick="currentSlide(1)"></a>
+                <a href="#review-2" class="app-review-nav-circle" onclick="currentSlide(2)"></a>
+                <a href="#review-3" class="app-review-nav-circle" onclick="currentSlide(3)"></a>
+                <a href="#review-4" class="app-review-nav-circle" onclick="currentSlide(4)"></a>
+                <a href="#review-5" class="app-review-nav-circle" onclick="currentSlide(5)"></a>
+            </div>
+        </div>
+ 
+    </section>
+
+
+    <section class="faq">
+
+        <h4 class="faq-header">about CRED</h4>
+        <p class="faq-content">CRED is a members only credit card bill payment platform that rewards its members for clearing their credit card bills on time. CRED members get access to exclusive rewards and experiences from premier brands upon clearing their credit card bills on CRED.</p>
+
+        <h4 class="faq-header">how does CRED reward their users?</h4>
+        <p class="faq-content">CRED partners with the best premier and luxury brands to bring you an unmatched experience at the end of every credit card bill payment cycle.</p>
+
+        <h4 class="faq-header">how to earn rewards on CRED?</h4>
+        <p class="faq-content">members can earn rewards in two different ways. CRED coins & gems.
+            <br>    CRED Coin Rewards:
+            <br>    - when you pay your credit card bill on CRED, for every rupee cleared on your bill you earn a CRED coin.
+            <br>    - you can then use earned CRED coins to claim exclusive rewards from different brands.
+            <br>    CRED Gem Rewards:
+            <br>    - for every person that you refer to CRED who makes a bill payment, you earn 10 gems.
+        </p>
+
+        <h4 class="faq-header">what do you get as a CRED Member?</h4>
+        <p class="faq-content">as a CRED member, you instantly make your <a href="#">credit card payment</a> experience hassle-free by unlocking several perks only available to CRED members.          
+            <br>    - seamless bill payment experience through modes like upi, net banking and debit cards
+            <br>    - timely credit card bill payment reminders
+            <br>    - automate your credit card bill payments
+            <br>    - expose hidden charges on your credit card with cred protect
+            <br>    - get real-time alerts on duplicate transactions on your credit card
+            <br>    - manage multiple credit cards on a single portal
+            <br>    - keep a realtime check on your <a href="#">credit score</a>
+        </p>
+
+        <h4 class="faq-header">how does one become a member of CRED?</h4>
+        <p class="faq-content">you can apply to be a member by signing up on CRED with your name and valid mobile number(issued within India). CRED is India’s most trustworthy and creditworthy community. This means we are selective about the members we take. For membership an Experian credit score of 750 or above is mandatory.</p>
+
+        <h4 class="faq-header">how to know your credit score?</h4>
+        <p class="faq-content">upon becoming a member, you can check and refresh your credit score with a single click. CRED then proceeds to acquire your updated credit score through a <a href="#">CIBIL score</a> soft inquiry. on CRED, you can access your credit score data anytime without any extra charges. as a member, this helps you keep regular checks on your credit score and re-evaluate your spending patterns to maintain a healthy credit status.</p>
+
+        <h4 class="faq-header">banks supported on CRED</h4>
+        <p class="faq-content">CRED supports credit card bill payment for <a href="#">American Express</a>, <a href="#">Standard Chartered</a>, <a href="#">Citibank</a>, <a href="#">HSBC</a>, <a href="#">HDFC</a>, <a href="#">ICICI</a>, <a href="#">SBI</a>, <a href="#">AXIS</a>, <a href="#">RBL</a>, <a href="#">PNB</a>, and other top Indian banks. We support VISA, MasterCard, American Express & RuPay cards.</p>
+
+        <hr>
+
+        <p class="links">
+            <strong>calculators:</strong>
+            <a href="#">SIP calculator</a>
+                <span>|</span>
+            <a href="#">EMI calculator</a>      
+                <span>|</span>
+            <a href="#">PPF calculator</a>      
+                <span>|</span>
+            <a href="#">home loan calculator</a>      
+                <span>|</span>
+            <a href="#">car loan calculator</a>      
+                <span>|</span>
+            <a href="#">fixed deposit calculator</a>      
+                <span>|</span>
+            <a href="#">recurring deposit calculator</a>      
+                <span>|</span>
+            <a href="#">simple loan calculator</a>      
+                <span>|</span>
+            <a href="#">compound interest calculator</a>      
+        </p>
+
+        <p class="links">
+            <strong>pay credit card bill:</strong>
+            <a href="#">American Express</a>
+                <span>|</span>
+            <a href="#">Standard Chartered</a>
+                <span>|</span>
+            <a href="#">HSBC</a>
+                <span>|</span>
+            <a href="#">HDFC</a>
+                <span>|</span>
+            <a href="#">ICICI</a>
+                <span>|</span>
+            <a href="#">SBI</a>
+                <span>|</span>
+            <a href="#">AXIS</a>
+                <span>|</span>
+            <a href="#">RBL</a>
+                <span>|</span>
+            <a href="#">PNB</a>
+                <span>|</span>
+            <a href="#">YES Bank</a>
+        </p>
+    </section>
+
+    <footer class="footer">
+
+        <div class="footer-cred">
+            <img src="images/cred-logo-horizontal.png" alt="" class="footer-cred-logo">
+            <img src="images/security-logos.png" alt="" class="footer-cred-verified">
+        </div>
+
+        <div class="footer-products-list">
+            <h3>products</h3>
+            <ul>
+                <li><a href="#">credit card bill payments</a></li>
+                <li><a href="#">credit score check</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-cred-list">
+            <h3>CRED</h3>
+            <ul>
+                <li><a href="#">about</a></li>
+                <li><a href="#">careers</a></li>
+                <li><a href="#">IPL</a></li>
+                <li><a href="#">customer care</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-resources-list">
+            <h3>resources</h3>
+            <ul>
+                <li><a href="#">articles</a></li>
+                <li><a href="#">blogs</a></li>
+                <li><a href="#">calculators</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-policy-list">
+            <h3>policy</h3>
+            <ul>
+                <li><a href="#">security</a></li>
+                <li><a href="#">transaction & user verification</a></li>
+                <li><a href="#">google API disclosure</a></li>
+                <li><a href="#">UPI faq & grievances</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-security">
+            <h2>complete security. no asterisks.</h2>
+            <p>CRED encrypts all data and transactions to ensure a completely secure experience for our members.</p>
+        </div>
+
+        <p class="footer-copyright">copyright © 2020-21 Dreamplug Technologies Pvt Ltd.</p>
+        <p class="footer-links">
+            <a href="#">privacy policy</a>
+                <span>|</span>
+            <a href="#">terms and conditions</a>
+                <span>|</span>
+            <a href="#">returns and refund</a>
+        </p>
+    </footer>
+</body>
+</html>
